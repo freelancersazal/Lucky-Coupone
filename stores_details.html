@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
+    />
+    <title>Lucky Coupon</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/spacing.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/multiple-image-video.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- <link rel="stylesheet" href="css/rtl.css" /> -->
+  </head>
+
+  <body>
+
+    <!--=========================
+      TOPBAR START
+    ===========================-->
+    <section class="wsus__topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-7 col-sm-6">
+                    <ul class="wsus__topbar_left d-flex flex-wrap">
+                    <li>
+                        <a href="login.html"><i class="fa fa-sign-out icon-margin"></i> login</a>
+                    </li>
+                    <li>
+                        <a href="login.html"><i class="far fa-unlock"></i> register</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-5 col-sm-6">
+                    <ul class="wsus__topbar_right d-flex flex-wrap justify-content-end">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================
+      TOPBAR END
+    ===========================-->
+
+
+    <!--=========================
+        MAIN MENU START
+    ===========================-->
+    <nav class="navbar navbar-expand-lg navbar-light main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="images/Top_logo.png" alt="Lucky Coupon" class="img-fluid w-100"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stores.html">stores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coupons.html">coupons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">pages <i class="fas fa-angle-down"></i></a>
+                        <ul class="wsus__droap_menu">
+                            <li><a href="about_us.html">about us</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="blog_details.html">blog details</a></li>
+                            <li><a href="privacy_policy.html">privacy policy</a></li>
+                            <li><a class="active" href="stores_details.html">store details</a></li>
+                            <li><a href="terms_condition.html">terms and condition</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">contact</a>
+                    </li>
+                </ul>
+                <ul class="wsus__menu_icon d-flex flex-wrap">
+                    <li>
+                        <a href="#"><i class="far fa-search"></i></a>
+                        <div class="wsus__serch_form">
+                            <form>
+                                <input type="text" placeholder="Search . .">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fal fa-shopping-bag"></i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--=========================
+        MAIN MENU END
+    ===========================-->
+
+ 
+    <!--=========================
+        POPUP CODE START
+    ===========================-->
+    <section class="wsus__popup_coupon">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+                        <a href="#" class="wsus__popup_img">
+                            <img src="images/brand_5.jpg" alt="brand" class="img-fluid"> 
+                        </a>
+                        <div class="wsus__popup_text">
+                            <h4>Only this month 40% discount on all product</h4>
+                            <p class="store d-flex flex-wrap align-items-center justify-content-center">Copy and paste this code at <a href="#" class="common_btn">ryans</a></p>
+                            <span class="code d-inline-flex align-items-center">#UFHJG6534 <a href="#" class="common_btn">Copy</a></span>
+                            <ul class="d-flex justify-content-center">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                            <div class="wsus__popup_text_details">
+                                <h5>details</h5>
+                                <span>Expire: 01-01-1970</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================
+        POPUP CODE END
+    ===========================-->
+
+
+    <!--=========================
+        BREADCRUMB START
+    ===========================-->
+    <section class="wsus__breadcrumb" style="background: url(images/breadcrumb_bg.jpg);">
+        <div class="wsus__breadcrumb_overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>stores details</h3>
+                        <ul class="wsus__bc_item d-flex align-items-center">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">stores details</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================
+        BREADCRUMB END
+    ===========================-->
+
+
+    <!--=========================
+        STORES DETAILS START
+    ===========================-->
+    <setion class="wsus__stores_details d-block mt_100 xs_mt_75">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="col-xl-12">
+                        <div class="wsus__stores_details_top">
+                            <div class="row">
+                                <div class="col-xl-4 col-md-4">
+                                    <div class="wsus__stores_details_top_img">
+                                        <img src="images/brand_10.jpg" alt="brand" class="img-fluid w-100">
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-md-8">
+                                    <div class="wsus__stores_details_top_text">
+                                        <h3>foodpanda.com</h3>
+                                        <p class="store_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                            <span> (10 rating)</span>
+                                        </p>
+                                        <ul class="share">
+                                                <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fal fa-share-alt"></i></a></li>
+                                            </ul>
+                                        <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at, doloremque vel nostrum repudiandae velit iste vitae corrupti voluptas inventore dignissimos? Molestias alias repellat, totam ipsam rerum eaque.</p>
+                                        <div class="wsus__stores_details_top_icon d-flex justify-content-between align-items-center">
+                                            <ul class="d-flex align-items-center mt_20">
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt_40">
+                        <div class="col-xl-12">
+                            <div class="wsus__section_heading d-flex justify-content-between align-items-center">
+                                <h2 class="d-flex align-items-center"><span><i class="far fa-bolt"></i></span> our coupons</h2>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-12">
+                            <div class="wsus__single_coupon">
+                                <div class="wsus__single_coupon_img">
+                                    <img src="images/brand_8.jpg" alt="brand" class="ing-fluid w-100">
+                                    <span class="offer">-50% off</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                    <span class="wsus__time"><i class="fas fa-clock"></i> 7 days ago</span>
+                                    <p class="wsus__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(21 rating)</span>
+                                    </p>
+                                </div>
+                                <div class="wsus__single_coupon_text">
+                                    <a href="#">Safe & Secure E-Filing With Free Tax USA</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                    <span class="exp_date">Expire: 09-05-2022</span>
+                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-12">
+                            <div class="wsus__single_coupon">
+                                <div class="wsus__single_coupon_img">
+                                    <img src="images/brand_5.jpg" alt="brand" class="ing-fluid w-100">
+                                    <span class="offer">-37% off</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                    <span class="wsus__time"><i class="fas fa-clock"></i> 2 days ago</span>
+                                    <p class="wsus__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(84 rating)</span>
+                                    </p>
+                                </div>
+                                <div class="wsus__single_coupon_text">
+                                    <a href="#">Vintage Bateau Neck Two Piece Long</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                    <span class="exp_date">Expire: 07-02-2022</span>
+                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-12">
+                            <div class="wsus__single_coupon">
+                                <div class="wsus__single_coupon_img">
+                                    <img src="images/brand_10.jpg" alt="brand" class="ing-fluid w-100">
+                                    <span class="offer">-20% off</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                    <span class="wsus__time"><i class="fas fa-clock"></i> 13 days ago</span>
+                                    <p class="wsus__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(34 rating)</span>
+                                    </p>
+                                </div>
+                                <div class="wsus__single_coupon_text">
+                                    <a href="#">Safe & Secure E-Filing With Free Tax USA</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                    <span class="exp_date">Expire: 18-02-2022</span>
+                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-12">
+                            <div class="wsus__single_coupon">
+                                <div class="wsus__single_coupon_img">
+                                    <img src="images/brand_1.jpg" alt="brand" class="ing-fluid w-100">
+                                    <span class="offer">-50% off</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                    <span class="wsus__time"><i class="fas fa-clock"></i> 7 days ago</span>
+                                    <p class="wsus__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(21 rating)</span>
+                                    </p>
+                                </div>
+                                <div class="wsus__single_coupon_text">
+                                    <a href="#">Safe & Secure E-Filing With Free Tax USA</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                    <span class="exp_date">Expire: 09-05-2022</span>
+                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-12">
+                            <div class="wsus__single_coupon">
+                                <div class="wsus__single_coupon_img">
+                                    <img src="images/brand_2.jpg" alt="brand" class="ing-fluid w-100">
+                                    <span class="offer">-37% off</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                    <span class="wsus__time"><i class="fas fa-clock"></i> 2 days ago</span>
+                                    <p class="wsus__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(84 rating)</span>
+                                    </p>
+                                </div>
+                                <div class="wsus__single_coupon_text">
+                                    <a href="#">Vintage Bateau Neck Two Piece Long</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                    <span class="exp_date">Expire: 07-02-2022</span>
+                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-lg-12">
+                            <div class="wsus__single_coupon">
+                                <div class="wsus__single_coupon_img">
+                                    <img src="images/brand_6.jpg" alt="brand" class="ing-fluid w-100">
+                                    <span class="offer">-20% off</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                    <span class="wsus__time"><i class="fas fa-clock"></i> 13 days ago</span>
+                                    <p class="wsus__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                        <span>(34 rating)</span>
+                                    </p>
+                                </div>
+                                <div class="wsus__single_coupon_text">
+                                    <a href="#">Safe & Secure E-Filing With Free Tax USA</a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                    <span class="exp_date">Expire: 18-02-2022</span>
+                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="wsus__store_sidebar" id="sticky_sidebar">
+                        <div class="wsus__sidebar_add mb_25">
+                            <img src="images/sidebar_offer.jpg" alt="product" class="img-fluid w-100">
+                            <div class="wsus__sidebar_add_overlay">
+                            </div>
+                        </div>
+                        <div class="wsus__sidebar_store mb_25">
+                            <h4>Best Stores</h4>
+                            <div class="row">
+                                <div class="col-xl-6 col-sm-6 col-md-4">
+                                    <a href="#" class="wsus__sidebar_single_store">
+                                        <img src="images/brand_7.jpg" alt="brand" class="img-fluid w-100">
+                                        <h4>xiaomi</h4>
+                                    </a>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-md-4">
+                                    <a href="#" class="wsus__sidebar_single_store">
+                                        <img src="images/brand_16.jpg" alt="brand" class="img-fluid w-100">
+                                        <h4>walton</h4>
+                                    </a>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-md-4">
+                                    <a href="#" class="wsus__sidebar_single_store">
+                                        <img src="images/brand_12.jpg" alt="brand" class="img-fluid w-100">
+                                        <h4>dianahost</h4>
+                                    </a>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-md-4">
+                                    <a href="#" class="wsus__sidebar_single_store">
+                                        <img src="images/brand_9.jpg" alt="brand" class="img-fluid w-100">
+                                        <h4>dianahost</h4>
+                                    </a>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-md-4">
+                                    <a href="#" class="wsus__sidebar_single_store">
+                                        <img src="images/brand_10.jpg" alt="brand" class="img-fluid w-100">
+                                        <h4>foodpanda</h4>
+                                    </a>
+                                </div>
+                                <div class="col-xl-6 col-sm-6 col-md-4">
+                                    <a href="#" class="wsus__sidebar_single_store">
+                                        <img src="images/brand_14.jpg" alt="brand" class="img-fluid w-100">
+                                        <h4>instructory</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wsus__sidebar_add mb_25">
+                            <img src="images/sidebar_offer.jpg" alt="product" class="img-fluid w-100">
+                            <div class="wsus__sidebar_add_overlay">
+                            </div>
+                        </div>
+                        <div class="wsus__sidebar_store mb_25 xs_mb_0">
+                            <h4>Best coupons</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">50% Discount Coupon from CatiLogoms.com</a>
+                                </li>
+                                <li>
+                                    <a href="#">$10 Credit for new users on Sohbet Molasi</a>
+                                </li>
+                                <li>
+                                    <a href="#">$5 for for your next logo design</a>
+                                </li>
+                                <li>
+                                    <a href="#">$5 for for your next logo design</a>
+                                </li>
+                                <li>
+                                    <a href="#">10% Discount Coupon from KnowLogoDesign</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </setion>
+    <!--=========================
+        STORES DETAILS END
+    ===========================-->
+
+    
+    <!--=========================
+        FOOTER START
+    ===========================-->
+    <footer class="mt_75 xs_mt_50 pt_100 xs_pt_75">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-sm-8 col-lg-4">
+                    <div class="wsus__footer_content">
+                        <a href="index.html" class="footer_logo">
+                            <img src="images/footer_logo.png" alt="logo" class="img-fluid">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore eligendi aperiam quis.</p>
+                        <ul class="mail_call">
+                            <li><a href="callto:01254798669847"><i class="fal fa-mobile-android"></i>  96-145684568694</a></li>
+                            <li><a href="mailto:01254798669847"><i class="fal fa-envelope"></i> example@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 col-lg-2">
+                    <div class="wsus__footer_content">
+                        <h3>coupons</h3>
+                        <ul class="footer_link">
+                            <li><a href="#">Recently Added</a></li>
+                            <li><a href="#">Expiring Soon</a></li>
+                            <li><a href="#">Printable</a></li>
+                            <li><a href="#">Coupon Codes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4 order-sm-4 col-lg-2">
+                    <div class="wsus__footer_content">
+                        <h3>Stores</h3>
+                        <ul class="footer_link">
+                            <li><a href="#">All Stores</a></li>
+                            <li><a href="#">Top Stores</a></li>
+                            <li><a href="#">Most Voted</a></li>
+                            <li><a href="#">Make A Suggestion</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-8 col-lg-4 order-lg-4">
+                    <div class="wsus__footer_content">
+                        <h3><b>Newsletter</b></h3>
+                        <form>
+                            <input type="text" placeholder="Subscribe">
+                            <button type="button">submit</button>
+                        </form>
+                        <h3 class="mb_15 mt_20">social link</h3>
+                        <ul class="wsus__footer_social_link d-flex">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wsus__copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>© All rights reserved <a href="#">lucky coupon</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--=========================
+        FOOTER END
+    ===========================-->
+
+
+    <!--============================
+        SCROLL BUTTON START
+    ==============================-->
+    <div class="wsus__scroll_btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--============================
+        SCROLL BUTTON  END
+    ==============================-->
+
+    
+    
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--slick  js-->
+    <script src="js/slick.min.js"></script>
+    <!--sudebar  js-->
+    <script src="js/sticky_sidebar.js"></script>
+    <!--select 2  js-->
+    <script src="js/select2.min.js"></script>
+    <!--select 2  js-->
+    <script src="js/multiple-image-video.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

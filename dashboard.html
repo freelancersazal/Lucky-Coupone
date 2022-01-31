@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
+    />
+    <title>Lucky Coupon</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/spacing.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/multiple-image-video.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- <link rel="stylesheet" href="css/rtl.css" /> -->
+  </head>
+
+  <body>
+      
+    <!--============================
+       DASHBOARD START
+    ==============================-->
+    <section class="wsus__dashboard mt_100 xs_mt_10 mb_100 xs_mb_10">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-5">
+                    <div class="wsus__dashboard_menu" id="sticky_sidebar">
+                        <img src="images/blooger2.jpg" alt="user" class="img-fluid img-thumbnail">
+                        <h3>denil smith</h3>
+                        <div class="d-flex align-items-start">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fal fa-address-card"></i> profile</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="far fa-heart"></i> wishlist</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fal fa-lock-alt"></i> change passward</button>
+                            <a href="#" class="nav-link"><i class="fal fa-sign-in-alt"></i> sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-7">
+                    <div class="wsus__dashboard_body">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="wsus__dashboard_profile">
+                                    <h3>profile</h3>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="wsus__dash_input">
+                                                    <label>name</label>
+                                                    <input type="text" placeholder=" Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__dash_input">
+                                                    <label>email</label>
+                                                    <input type="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__dash_input">
+                                                    <label>phone</label>
+                                                    <input type="text" placeholder="Phome">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__dash_input">
+                                                    <label>country</label>
+                                                    <select class="select_2" name="state">
+                                                        <option value="AL">country</option>
+                                                        <option value="">country 1</option>
+                                                        <option value="">country 2</option>
+                                                        <option value="">country 3</option>
+                                                        <option value="">country 4</option>
+                                                        <option value="">country 5</option>
+                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 xs_mt_20">
+                                                <div class="wsus__dash_input">
+                                                    <label class="xs_mb_5 mt-3 mb-2">city</label>
+                                                    <select class="select_2" name="state">
+                                                        <option value="AL">city</option>
+                                                        <option value="">city 1</option>
+                                                        <option value="">city 2</option>
+                                                        <option value="">city 3</option>
+                                                        <option value="">city 4</option>
+                                                        <option value="">city 5</option>
+                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 xs_mt_20">
+                                                <div class="wsus__dash_input">
+                                                    <label class="xs_mb_5 mt-3 mb-2">zip</label>
+                                                    <input type="text" placeholder="Zip">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__dash_input">
+                                                    <label>new password</label>
+                                                    <input type="password" placeholder="New Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__dash_input">
+                                                    <label>confirm password</label>
+                                                    <input type="password" placeholder="Confirm Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__dash_input">
+                                                    <label>about me</label>
+                                                    <textarea cols="3" rows="5" placeholder="About Me"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__dash_input">
+                                                    <label>Avatar</label>
+                                                    <div class="img_upload mt-1">
+                                                        <div class="gallery">
+                                                           <a class="cam" href="javascript:void(0)"><span><i class="fas fa-image"></i></span></a>
+                                                        </div>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__dash_input">
+                                                    <button type="submit" class="common_btn border-0">save change</button>
+                                                    <button type="reset" class="common_btn border-0">cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="wsus__wishlist">
+                                    <h3>wishlist</h3>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="wsus__single_coupon">
+                                                <div class="wsus__single_coupon_img">
+                                                    <img src="images/brand_8.jpg" alt="brand" class="ing-fluid w-100">
+                                                    <span class="offer">-50% off</span>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                                    <span class="wsus__time"><i class="fas fa-clock"></i> 7 days ago</span>
+                                                    <p class="wsus__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span>(21 rating)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="wsus__single_coupon_text">
+                                                    <a href="#">Safe & Secure E-Filing With Free Tax USA</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                                    <span class="exp_date">Expire: 09-05-2022</span>
+                                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="wsus__single_coupon">
+                                                <div class="wsus__single_coupon_img">
+                                                    <img src="images/brand_5.jpg" alt="brand" class="ing-fluid w-100">
+                                                    <span class="offer">-37% off</span>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fal fa-heart"></i></a></li>
+                                                        <li><a href="#"><i class="far fa-share-alt"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wsus__single_coupon_header d-flex justify-content-between">
+                                                    <span class="wsus__time"><i class="fas fa-clock"></i> 2 days ago</span>
+                                                    <p class="wsus__rating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <span>(84 rating)</span>
+                                                    </p>
+                                                </div>
+                                                <div class="wsus__single_coupon_text">
+                                                    <a href="#">Vintage Bateau Neck Two Piece Long</a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="wsus__single_coupon_footer d-flex justify-content-between align-items-center">
+                                                    <span class="verified"><i class="far fa-check"></i> Verified</span>
+                                                    <span class="exp_date">Expire: 07-02-2022</span>
+                                                    <a href="#" class="code_btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span>get code</span> 2598458945</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div class="wsus__change_pass">
+                                    <h3>change password</h3>
+                                    <div class="row">
+                                        <div class="col-xl-10 m-auto">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <label>current password</label>
+                                                        <input type="password" placeholder="Current Password">
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <label>new password</label>
+                                                        <input type="password" placeholder="New Password">
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <label>confirm password</label>
+                                                        <input type="password" placeholder="Confirm Password">
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <button class="common_btn border-0" type="submit">submit</button>
+                                                        <button type="reset" class="common_btn border-0">cancel</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============================
+       DASHBOARD END
+    ==============================-->
+
+
+    <!--============================
+        SCROLL BUTTON START
+    ==============================-->
+    <div class="wsus__scroll_btn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--============================
+        SCROLL BUTTON  END
+    ==============================-->
+
+
+    
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--slick  js-->
+    <script src="js/slick.min.js"></script>
+    <!--sudebar  js-->
+    <script src="js/sticky_sidebar.js"></script>
+    <!--select 2  js-->
+    <script src="js/select2.min.js"></script>
+    <!--select 2  js-->
+    <script src="js/multiple-image-video.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
